@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative">
       <Image alt="" fill src={"/hero.jpg"} className="object-cover" />
-      <div className="relative py-[40%] md:py-[30%] lg:py-[25%] xl:py-[10%] bg-black/50 px-4">
+      <div className="relative py-[40%] md:py-[30%] lg:py-[25%] xl:py-[13%] bg-black/50 px-4">
         <div className="container mx-auto">
           <div className="max-w-2xl text-white space-y-5">
             <h1 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4">

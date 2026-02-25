@@ -1,13 +1,36 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import React from "react";
 import CustomButton1 from "../buttons/CustomButton1";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-4 ">
+    <header
+      className={`fixed top-0 z-40 w-full transition-all duration-300 ${
+        isScrolled
+          ? "backdrop-blur-md bg-brand-primary/60 border-white/10"
+          : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
+        <div className="flex items-center justify-between gap-2">
+          <div className="md:flex md:items-center md:gap-12 max-md:flex-1">
             <a className="block text-teal-600" href="#">
               <Image src="/logo.svg" alt="Logo" width={150} height={150} />
             </a>
