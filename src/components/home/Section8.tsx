@@ -6,7 +6,7 @@ const Section8 = () => {
     <section className="">
       <div className="relative isolate overflow-hidden">
         <Image
-          src="/bg1.jpg"
+          src="/image4.jpeg"
           alt="Exhibition center facade"
           fill
           className="object-cover"

@@ -2,7 +2,7 @@ const Section6 = () => {
   return (
     <section className="bg-brand-primary px-4 py-4">
       <div className="container mx-auto px-4 py-16 text-white md:px-8 md:py-24 lg:px-12 lg:py-28">
-        <h2 className="max-w-5xl border-l-4 border-white pl-6 text-3xl md:text-5xl font-medium leading-tight md:text-6xl lg:text-7xl">
+        <h2 className="max-w-5xl border-l-4 border-white pl-6 text-3xl md:text-5xl font-medium leading-tight  ">
           Lorem ipsum dolor sit amet, consec Lorem ipsum
         </h2>
 

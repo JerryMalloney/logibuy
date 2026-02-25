@@ -20,7 +20,7 @@ const Section5 = () => {
             </h2>
 
             <Image
-              src="/bg1.jpg"
+              src="/image3.jpg"
               alt="Industrial building exterior"
               width={620}
               height={430}

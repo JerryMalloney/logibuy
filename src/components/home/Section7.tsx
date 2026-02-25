@@ -51,7 +51,7 @@ const Section7 = () => {
           </div>
 
           <Image
-            src="/bg1.jpg"
+            src="/image2.png"
             alt="Busy city exhibition center"
             width={560}
             height={420}
