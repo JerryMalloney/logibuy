@@ -3,11 +3,11 @@ import CustomButton1 from "../buttons/CustomButton1";
 
 const Section3 = () => {
   return (
-    <section className="bg-brand-primary px-4 py-4">
+    <section className="">
       <div className="bg-muted">
         <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-[2fr_1fr] lg:gap-20">
           <div className=" space-y-6">
-            <h2 className="text-5xl leading-tight font-medium text-foreground">
+            <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
               Lorem ipsum dolor sit amet, consec
             </h2>
             <p className="text-xl font-medium uppercase text-brand-secondary">

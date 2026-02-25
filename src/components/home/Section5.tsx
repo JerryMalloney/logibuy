@@ -15,7 +15,7 @@ const Section5 = () => {
       <div className="bg-muted">
         <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-8">
-            <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-5xl font-medium leading-tight text-foreground">
+            <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-5xl font-medium leading-tight text-foreground">
               Lorem ipsum dolor sit amet, consec
             </h2>
 

@@ -23,7 +23,7 @@ const Section2 = () => {
   return (
     <section className="bg-brand-primary px-4 py-16 md:py-20">
       <div className="container mx-auto text-white">
-        <h2 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4 max-w-4xl leading-tight">
+        <h2 className="font-medium text-3xl lg:text-5xl border-l-5 border-white pl-4 max-w-4xl leading-tight">
           Lorem ipsum dolor sit amet, conseclorem ipsum dolor sit amet, consec
         </h2>
 

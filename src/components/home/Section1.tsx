@@ -14,12 +14,11 @@ const Section1 = () => {
               alt="Logibuy logo"
               width={170}
               height={56}
-              className="h-34 w-auto "
+              className="h-34 w-auto mx-auto"
             />
           ))}
         </div>
       </div>
-      <div className="h-3 w-full bg-brand-primary" />
     </section>
   );
 };

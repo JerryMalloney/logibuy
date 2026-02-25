@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <Section1 />
       <Section2 />
+      <Section1 />
+
       <Section3 />
       <Section4 />
       <Section5 />

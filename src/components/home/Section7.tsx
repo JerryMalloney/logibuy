@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const testimonials = [
   {
@@ -33,7 +34,7 @@ const Section7 = () => {
       <div className="container mx-auto px-4 py-14 md:px-8 md:py-20">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-6">
-            <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-5xl font-medium leading-tight text-foreground">
+            <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-5xl font-medium leading-tight text-foreground">
               Testimonios
             </h2>
 
@@ -41,7 +42,7 @@ const Section7 = () => {
               Lorem ipsum dolor sit amet, consec
             </p>
 
-            <p className="max-w-2xl text-xl leading-relaxed text-muted-foreground">
+            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
               cras morbi tellus amet. Turpis amet placerat ut lacinia. Nam
               interdum diam condimentum sed augue nunc quam. Mattis dictum cras
@@ -63,11 +64,13 @@ const Section7 = () => {
         <Swiper
           spaceBetween={20}
           slidesPerView={1.1}
+          modules={[Autoplay]}
           breakpoints={{
             768: { slidesPerView: 2.1, spaceBetween: 24 },
             1024: { slidesPerView: 3.1, spaceBetween: 24 },
           }}
           loop
+          autoplay
           className="px-4! md:px-8!"
         >
           {testimonials.map((testimonial, index) => (
