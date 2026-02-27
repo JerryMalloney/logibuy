@@ -1,19 +1,24 @@
+import Image from "next/image";
+
 const businessPlans = [
   {
     step: "01",
     title: "Plan Yiwu",
+    image: "/canton1.jpg",
     description:
       "Programa enfocado en compras estratégicas en Yiwu con acompañamiento logístico, validación de proveedores y coordinación operativa para importadores que buscan iniciar o escalar.",
   },
   {
     step: "02",
     title: "Plan 1 Canton Fair",
+    image: "/canton2.jpg",
     description:
       "Ruta diseñada para empresarios que quieren aprovechar Canton Fair con orientación comercial, soporte de traducción y estructura logística para convertir visitas en oportunidades reales.",
   },
   {
     step: "03",
     title: "Plan 2 Canton Fair",
+    image: "/canton3.jpg",
     description:
       "Versión premium del plan ferial para delegaciones y empresas con objetivos de expansión, incluyendo planificación avanzada y asistencia integral en destino.",
   },
@@ -32,7 +37,13 @@ const Section4 = () => {
             <article key={plan.step} className="bg-[#FFFFFF33] p-8 md:p-12">
               <p className="text-5xl font-light leading-none">{plan.step}</p>
               <h3 className="mt-2 text-2xl leading-tight">{plan.title}</h3>
-              <div className="mt-5 aspect-square w-full bg-[#C4E0E9]" />
+              <Image
+                src={plan.image}
+                alt={plan.title}
+                width={480}
+                height={480}
+                className="mt-5 aspect-10/7 w-full object-cover "
+              />
               <p className="mt-6 text-sm leading-relaxed">{plan.description}</p>
             </article>
           ))}
