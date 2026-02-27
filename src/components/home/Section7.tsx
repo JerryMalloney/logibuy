@@ -7,24 +7,24 @@ import { Autoplay } from "swiper/modules";
 
 const testimonials = [
   {
-    rating: "4.8",
-    text: "Nam interdum diam condimentum sed augue nunc quam. Mattis dictum cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies iaculis in scelerisque phasellus tellus enim.",
-    author: "Michael Reed, CEO GreenTech Solutions",
+    rating: "5.0",
+    text: "LOGIBUY nos ayudó a estructurar nuestra importación desde China con proveedores verificados y una operación marítima clara de principio a fin.",
+    author: "Director de Compras, Retail LATAM",
   },
   {
-    rating: "4.8",
-    text: "Nam interdum diam condimentum sed augue nunc quam. Mattis dictum cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies iaculis in scelerisque phasellus tellus enim.",
-    author: "Michael Reed, CEO GreenTech Solutions",
+    rating: "4.9",
+    text: "Mejoramos tiempos de respuesta con su esquema de envío aéreo y soporte aduanal. Hoy tenemos más control sobre costos operativos.",
+    author: "Gerente General, E-commerce Regional",
   },
   {
-    rating: "4.8",
-    text: "Nam interdum diam condimentum sed augue nunc quam. Mattis dictum cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies iaculis in scelerisque phasellus tellus enim.",
-    author: "Michael Reed, CEO GreenTech Solutions",
+    rating: "5.0",
+    text: "Su acompañamiento en inspecciones técnicas y supply chain nos permitió escalar inventario sin comprometer calidad.",
+    author: "Fundador, Marca de Consumo",
   },
   {
-    rating: "4.8",
-    text: "Nam interdum diam condimentum sed augue nunc quam. Mattis dictum cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies iaculis in scelerisque phasellus tellus enim.",
-    author: "Michael Reed, CEO GreenTech Solutions",
+    rating: "4.9",
+    text: "Necesitábamos una solución puerta a puerta para La Guaira y el resultado fue una cadena logística mucho más predecible.",
+    author: "Líder de Operaciones, Importadora Caribe",
   },
 ];
 
@@ -35,18 +35,17 @@ const Section7 = () => {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-6">
             <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-5xl font-medium leading-tight text-foreground">
-              Testimonios
+              Testimonios de importadores y empresas en expansión
             </h2>
 
             <p className="text-base font-semibold uppercase text-brand-secondary">
-              Lorem ipsum dolor sit amet, consec
+              Experiencias reales en logística internacional
             </p>
 
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia. Nam
-              interdum diam condimentum sed augue nunc quam. Mattis dictum cras
-              morbi tellus amet. Turpis amet placerat ut lacinia.
+              Empresas de distintos sectores confían en nuestro equipo para
+              coordinar importaciones desde China, optimizar su supply chain y
+              ejecutar operaciones aduanales con acompañamiento continuo.
             </p>
           </div>
 

@@ -1,21 +1,21 @@
 const businessPlans = [
   {
     step: "01",
-    title: "Opciones de Traslado",
+    title: "Plan Yiwu",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget. Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Programa enfocado en compras estratégicas en Yiwu con acompañamiento logístico, validación de proveedores y coordinación operativa para importadores que buscan iniciar o escalar.",
   },
   {
     step: "02",
-    title: "Servicios y costos Totales",
+    title: "Plan 1 Canton Fair",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget. Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Ruta diseñada para empresarios que quieren aprovechar Canton Fair con orientación comercial, soporte de traducción y estructura logística para convertir visitas en oportunidades reales.",
   },
   {
     step: "03",
-    title: "Alojamiento 6 Noches",
+    title: "Plan 2 Canton Fair",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget. Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Versión premium del plan ferial para delegaciones y empresas con objetivos de expansión, incluyendo planificación avanzada y asistencia integral en destino.",
   },
 ];
 
@@ -24,7 +24,7 @@ const Section4 = () => {
     <section className="bg-[#0F242A] px-4 py-14 md:py-20">
       <div className="container mx-auto text-white">
         <h2 className="border-l-5 border-white pl-4 text-4xl font-medium leading-tight lg:text-5xl">
-          Plan de Negocios
+          Planes de Negocio Internacional
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -40,20 +40,18 @@ const Section4 = () => {
 
         <div className="mt-12 space-y-10">
           <p className="text-sm font-semibold uppercase text-brand-secondary">
-            Beneficios comunes y personalización
+            Asesoría personalizada para cada tipo de empresa
           </p>
           <p className="max-w-6xl text-base leading-relaxed text-white/90">
-            Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi
-            ultrices quis elementum. Augue potenti viverra nec sit a malesuada
-            eget. Morbi neque volutpat commodo fames nulla aliquam quam. Morbi
-            nisi ultrices quis elementum. Augue potenti viverra nec sit a
-            malesuada eget.
+            Cada plan se adapta al perfil de tu operación, rubro y objetivos de
+            crecimiento. Nuestro equipo te comparte el alcance completo del
+            servicio, tiempos y próximos pasos en una asesoría directa.
           </p>
           <a
             href="#"
             className="inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold uppercase text-brand-primary transition hover:bg-white/90"
           >
-            Contactanos y conoce más
+            Solicitar información de planes
           </a>
         </div>
       </div>

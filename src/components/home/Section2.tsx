@@ -1,21 +1,21 @@
 const stats = [
   {
-    value: "10K +",
-    label: "Installations Completed",
+    value: "China + LATAM",
+    label: "Operación internacional conectada",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Gestionamos compras, consolidación y despacho para empresas que importan desde China hacia mercados de alto crecimiento.",
   },
   {
-    value: "15 +",
-    label: "Years of Experience",
+    value: "60 días",
+    label: "Tránsito marítimo referencial LCL",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Coordinamos rutas eficientes, documentación y seguimiento para mantener visibilidad logística en cada etapa.",
   },
   {
-    value: "25K +",
-    label: "Satisfied Customers",
+    value: "End-to-End",
+    label: "Supply chain y aduanas",
     description:
-      "Morbi neque volutpat commodo fames nulla aliquam quam. Morbi nisi ultrices quis elementum. Augue potenti viverra nec sit a malesuada eget.",
+      "Integramos warehousing en China, inspecciones técnicas y nacionalización en destino para una operación sin fricciones.",
   },
 ];
 
@@ -24,7 +24,8 @@ const Section2 = () => {
     <section className="bg-brand-primary px-4 py-16 md:py-20">
       <div className="container mx-auto text-white">
         <h2 className="font-medium text-3xl lg:text-5xl border-l-5 border-white pl-4 max-w-4xl leading-tight">
-          Lorem ipsum dolor sit amet, conseclorem ipsum dolor sit amet, consec
+          Logística internacional para escalar tus importaciones con control y
+          trazabilidad
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:mt-14 lg:grid-cols-3">

@@ -2,11 +2,11 @@ import Image from "next/image";
 import CustomButton1 from "../buttons/CustomButton1";
 
 const highlights = [
-  "Morbi neque volutpat",
-  "Morbi neque volutpat",
-  "Morbi neque volutpat",
-  "Morbi neque volutpat",
-  "Morbi neque volutpat",
+  "Envío marítimo LCL y FCL con coordinación integral",
+  "Envío aéreo por kilogramo para cargas urgentes",
+  "Inspecciones técnicas y control de calidad en origen",
+  "Warehousing en China y gestión de inventario",
+  "Servicios aduanales y nacionalización en destino",
 ];
 
 const Section5 = () => {
@@ -16,7 +16,7 @@ const Section5 = () => {
         <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-8">
             <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-5xl font-medium leading-tight text-foreground">
-              Lorem ipsum dolor sit amet, consec
+              Servicios logísticos diseñados para importadores exigentes
             </h2>
 
             <Image
@@ -30,13 +30,13 @@ const Section5 = () => {
 
           <div className="space-y-7 self-center">
             <p className="text-base font-medium uppercase text-brand-secondary">
-              Lorem ipsum dolor sit amet, consec
+              Soluciones completas de comercio internacional
             </p>
 
             <p className="text-xl leading-relaxed text-muted-foreground">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies
-              iaculis in scelerisque. Phasellus tellus enim quam interdum.
+              Integramos operación marítima, aérea, aduanal y de supply chain
+              para que tu empresa importe con mayor control, menos riesgos y
+              mejor planificación comercial.
             </p>
 
             <ul className="space-y-3 pl-5 text-lg text-muted-foreground list-disc">
@@ -46,7 +46,7 @@ const Section5 = () => {
             </ul>
 
             <div className="pt-2">
-              <CustomButton1 text="CONOCE MÁS" link="/" />
+              <CustomButton1 text="SOLICITAR COTIZACIÓN" link="/about" />
             </div>
           </div>
         </div>

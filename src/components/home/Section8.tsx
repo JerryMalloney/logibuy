@@ -16,14 +16,14 @@ const Section8 = () => {
         <div className="relative container mx-auto px-4 py-20 text-center text-white md:py-28 lg:py-32">
           <div className="mx-auto max-w-6xl space-y-8">
             <h2 className="text-3xl font-medium leading-tight md:text-5xl lg:text-6xl">
-              Lorem Impsup Lorem Lorem Impsup
+              ¿Listo para importar desde China con una estrategia profesional?
             </h2>
 
             <p className="mx-auto   leading-relaxed text-white/90 md:text-lg">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies
-              iaculis in scelerisque. Phasellus tellus enim quam interdum diam
-              lectus. Vitae porttitor euismod at fermentum.
+              Nuestro equipo diseña contigo una ruta logística eficiente para
+              compras, consolidación, transporte internacional y nacionalización
+              en destino. Agenda una asesoría y lleva tu operación al siguiente
+              nivel.
             </p>
 
             <div className="flex justify-center pt-2">

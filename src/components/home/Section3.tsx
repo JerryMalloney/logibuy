@@ -8,19 +8,20 @@ const Section3 = () => {
         <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-[2fr_1fr] lg:gap-20">
           <div className=" space-y-6">
             <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
-              Lorem ipsum dolor sit amet, consec
+              Deja de depender de intermediarios y compra directo en China
             </h2>
             <p className="text-xl font-medium uppercase text-brand-secondary">
-              Sustainable energy made simple
+              Procura internacional con visión comercial
             </p>
             <p className=" leading-relaxed text-muted-foreground">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies
-              iaculis in scelerisque. Phasellus tellus enim quam interdum diam
-              lectus. Vitae porttitor euismod at fermentum.
+              Te acompañamos desde la búsqueda de proveedores y validación de
+              fábrica hasta la coordinación logística de origen a destino.
+              Nuestro enfoque combina ahorro operativo, cumplimiento documental
+              y acompañamiento experto para importadores que buscan crecer con
+              seguridad.
             </p>
             <div className="pt-4">
-              <CustomButton1 text="CONOCE MÁS" link="/" />
+              <CustomButton1 text="VER SERVICIOS" link="/about" />
             </div>
           </div>
 
