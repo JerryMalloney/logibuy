@@ -127,3 +127,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+#myLinearSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
