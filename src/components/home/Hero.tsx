@@ -23,7 +23,7 @@ const Hero = () => {
               Latinoamérica y Europa.
             </p>
             <div className="pl-5">
-              <CustomButton1 link="/" text="SOLICITAR ASESORÍA" />
+              <CustomButton1 link="/contact" text="SOLICITAR ASESORÍA" />
             </div>
           </div>
         </div>

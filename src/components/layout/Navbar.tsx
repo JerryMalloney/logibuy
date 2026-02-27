@@ -16,11 +16,10 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "#" },
-  { label: "Page", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Inicio", href: "/" },
+  { label: "Sobre Nosotros", href: "/about" },
+  { label: "Servicios", href: "/about" },
+  { label: "Contáctanos", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -50,9 +49,9 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between gap-2">
           <div className="md:flex md:items-center md:gap-12 max-md:flex-1">
-            <a className="block text-teal-600" href="#">
+            <Link className="block text-teal-600" href="/">
               <Image src="/logo.svg" alt="Logo" width={150} height={150} />
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:block">
@@ -60,12 +59,12 @@ const Navbar = () => {
               <ul className="flex items-center gap-6 text-base">
                 {navLinks.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
                       href={link.href}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -74,7 +73,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <div className="hidden md:block">
-              <CustomButton1 link="/" text="Lets Connect" />
+              <CustomButton1 link="/contact" text="Contáctanos" />
             </div>
 
             <div className="block md:hidden">
@@ -85,7 +84,7 @@ const Navbar = () => {
                     className="rounded-md border border-white/20 bg-white/10 p-2 text-white transition hover:bg-white/20"
                   >
                     <Menu className="size-5" />
-                    <span className="sr-only">Open menu</span>
+                    <span className="sr-only">Abrir menú</span>
                   </button>
                 </SheetTrigger>
 
@@ -101,9 +100,9 @@ const Navbar = () => {
                         width={120}
                         height={36}
                       />
-                      <SheetTitle className="mt-2 text-white">Menu</SheetTitle>
+                      <SheetTitle className="mt-2 text-white">Menú</SheetTitle>
                       <SheetDescription className="text-white/70">
-                        Navigate through Logibuy sections.
+                        Navega por las secciones principales de LOGIBUY.
                       </SheetDescription>
                     </SheetHeader>
 
@@ -127,10 +126,10 @@ const Navbar = () => {
                     <div className="mt-auto border-t border-white/10 p-5">
                       <SheetClose asChild>
                         <Link
-                          href="/"
+                          href="/contact"
                           className="inline-flex w-full items-center justify-center rounded-full bg-brand-secondary px-5 py-3 text-sm font-semibold text-white"
                         >
-                          Lets Connect
+                          Contáctanos
                         </Link>
                       </SheetClose>
                     </div>

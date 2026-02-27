@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const businessPlans = [
   {
@@ -60,12 +61,12 @@ const Section4 = () => {
             crecimiento. Nuestro equipo te comparte el alcance completo del
             servicio, tiempos y próximos pasos en una asesoría directa.
           </p>
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold uppercase text-brand-primary transition hover:bg-white/90"
           >
             Solicitar información de planes
-          </a>
+          </Link>
         </div>
       </div>
     </section>

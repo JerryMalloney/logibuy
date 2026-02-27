@@ -11,22 +11,25 @@ import {
 } from "lucide-react";
 
 const navigationLinks = [
-  { label: "Inicio", href: "#" },
-  { label: "Sobre nosotros", href: "#" },
-  { label: "Calculadora de Envios", href: "#" },
-  { label: "Contactanos", href: "#" },
+  { label: "Inicio", href: "/" },
+  { label: "Sobre nosotros", href: "/about" },
+  { label: "Calculadora de Envios", href: "/about" },
+  { label: "Contactanos", href: "/contact" },
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "#", icon: Facebook },
-  { label: "Twitter", href: "#", icon: Twitter },
-  { label: "LinkedIn", href: "#", icon: Linkedin },
-  { label: "Instagram", href: "#", icon: Instagram },
+  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
+  { label: "Twitter", href: "https://x.com", icon: Twitter },
+  { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
+  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
 ];
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-primary px-4 py-10 text-white md:py-14">
+    <footer
+      id="contacto"
+      className="bg-brand-primary px-4 py-10 text-white md:py-14"
+    >
       <div className="container mx-auto space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14 lg:grid-cols-[1.35fr_1fr]">
           <div className="space-y-6">

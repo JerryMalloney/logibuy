@@ -27,7 +27,7 @@ const Section8 = () => {
             </p>
 
             <div className="flex justify-center pt-2">
-              <CustomButton1 text="CONTACTANOS" link="/" />
+              <CustomButton1 text="CONTACTANOS" link="/contact" />
             </div>
           </div>
         </div>

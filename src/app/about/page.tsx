@@ -6,11 +6,11 @@ import ServicesSection from "@/components/about/ServicesSection";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "About Us | LOGIBUY - Importación y logística internacional",
+  title: "Sobre Nosotros | LOGIBUY - Importación y logística internacional",
   description:
     "Conoce al equipo de LOGIBUY: especialistas en importación desde China, logística internacional, supply chain, inspecciones técnicas y operaciones aduanales para empresas en expansión.",
   keywords: [
-    "about logibuy",
+    "sobre logibuy",
     "empresa de importación desde china",
     "agencia logística internacional",
     "consultoría supply chain",
