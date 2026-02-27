@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4">
               Importación desde China y logística internacional puerta a puerta
             </h1>
-            <p className="pl-5">
+            <p className="pl-5 text-base">
               Conectamos tu negocio con fabricantes y centros de abastecimiento
               en China mediante soluciones de envío marítimo LCL/FCL, envío
               aéreo, gestión aduanal y asesoría estratégica de supply chain para

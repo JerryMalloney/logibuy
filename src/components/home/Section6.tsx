@@ -6,7 +6,7 @@ const Section6 = () => {
           Acortamos la distancia entre tu idea y el mercado internacional
         </h2>
 
-        <p className="mt-12 max-w-4xl text-xl leading-relaxed text-white/85">
+        <p className="mt-12 max-w-4xl text-base leading-relaxed text-white/85">
           En LOGIBUY conectamos fabricantes, logística y gestión operativa para
           impulsar marcas que quieren importar desde China de forma profesional,
           rentable y sostenible en el tiempo.

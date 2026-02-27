@@ -15,7 +15,7 @@ const Section5 = () => {
       <div className="bg-muted">
         <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-8">
-            <h2 className="max-w-xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-5xl font-medium leading-tight text-foreground">
+            <h2 className="max-w-2xl border-l-4 border-brand-secondary pl-6 text-3xl md:text-4xl font-medium leading-tight text-foreground">
               Servicios logísticos diseñados para importadores exigentes
             </h2>
 
@@ -33,7 +33,7 @@ const Section5 = () => {
               Soluciones completas de comercio internacional
             </p>
 
-            <p className="text-xl leading-relaxed text-muted-foreground">
+            <p className="text-base leading-relaxed text-muted-foreground">
               Integramos operación marítima, aérea, aduanal y de supply chain
               para que tu empresa importe con mayor control, menos riesgos y
               mejor planificación comercial.

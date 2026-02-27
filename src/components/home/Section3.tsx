@@ -10,10 +10,10 @@ const Section3 = () => {
             <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
               Deja de depender de intermediarios y compra directo en China
             </h2>
-            <p className="text-xl font-medium uppercase text-brand-secondary">
+            <p className="text-base font-medium uppercase text-brand-secondary">
               Procura internacional con visión comercial
             </p>
-            <p className=" leading-relaxed text-muted-foreground">
+            <p className="text-base leading-relaxed text-muted-foreground">
               Te acompañamos desde la búsqueda de proveedores y validación de
               fábrica hasta la coordinación logística de origen a destino.
               Nuestro enfoque combina ahorro operativo, cumplimiento documental

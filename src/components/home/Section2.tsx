@@ -33,7 +33,7 @@ const Section2 = () => {
             <article key={stat.label} className="bg-muted-foreground/80 p-10">
               <h3 className="text-5xl font-medium">{stat.value}</h3>
               <p className="mt-3 text-2xl">{stat.label}</p>
-              <p className="mt-14 text-lg leading-relaxed">
+              <p className="mt-14 text-base leading-relaxed">
                 {stat.description}
               </p>
             </article>

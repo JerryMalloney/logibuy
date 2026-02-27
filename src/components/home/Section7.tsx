@@ -42,7 +42,7 @@ const Section7 = () => {
               Experiencias reales en logística internacional
             </p>
 
-            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
               Empresas de distintos sectores confían en nuestro equipo para
               coordinar importaciones desde China, optimizar su supply chain y
               ejecutar operaciones aduanales con acompañamiento continuo.
@@ -79,7 +79,7 @@ const Section7 = () => {
                   {testimonial.rating}
                   <span className="ml-3 text-yellow-400">★★★★★</span>
                 </p>
-                <p className="mt-6 text-lg leading-relaxed">
+                <p className="mt-6 text-base leading-relaxed">
                   {testimonial.text}
                 </p>
                 <p className="mt-8 text-base text-brand-secondary">

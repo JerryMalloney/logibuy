@@ -44,13 +44,15 @@ const Section4 = () => {
                 height={480}
                 className="mt-5 aspect-10/7 w-full object-cover "
               />
-              <p className="mt-6 text-sm leading-relaxed">{plan.description}</p>
+              <p className="mt-6 text-base leading-relaxed">
+                {plan.description}
+              </p>
             </article>
           ))}
         </div>
 
         <div className="mt-12 space-y-10">
-          <p className="text-sm font-semibold uppercase text-brand-secondary">
+          <p className="text-base font-semibold uppercase text-brand-secondary">
             Asesoría personalizada para cada tipo de empresa
           </p>
           <p className="max-w-6xl text-base leading-relaxed text-white/90">

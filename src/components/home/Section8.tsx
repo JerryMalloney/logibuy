@@ -19,7 +19,7 @@ const Section8 = () => {
               ¿Listo para importar desde China con una estrategia profesional?
             </h2>
 
-            <p className="mx-auto   leading-relaxed text-white/90 md:text-lg">
+            <p className="mx-auto text-base leading-relaxed text-white/90">
               Nuestro equipo diseña contigo una ruta logística eficiente para
               compras, consolidación, transporte internacional y nacionalización
               en destino. Agenda una asesoría y lleva tu operación al siguiente
