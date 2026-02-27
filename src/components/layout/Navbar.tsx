@@ -16,8 +16,8 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
   { label: "Services", href: "#" },
   { label: "Page", href: "#" },
   { label: "Contact Us", href: "#" },

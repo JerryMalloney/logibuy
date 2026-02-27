@@ -8,7 +8,7 @@ const Section2 = () => {
         <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className="justify-self-center lg:justify-self-end">
             <Image
-              src="/bg1.jpg"
+              src="/guangzhou.jpg"
               alt="City and modern building"
               width={500}
               height={600}
@@ -17,19 +17,18 @@ const Section2 = () => {
           </div>
           <div className=" space-y-6">
             <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
-              Lorem ipsum dolor sit amet, consec
+              Operación logística puerta a puerta con enfoque empresarial
             </h2>
-            <p className="text-xl font-medium uppercase text-brand-secondary">
-              Sustainable energy made simple
+            <p className="text-base font-medium uppercase text-brand-secondary">
+              Soluciones marítimas, aéreas y aduanales
             </p>
-            <p className=" leading-relaxed text-muted-foreground">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies
-              iaculis in scelerisque. Phasellus tellus enim quam interdum diam
-              lectus. Vitae porttitor euismod at fermentum.
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Coordinamos envíos internacionales, inspecciones técnicas,
+              warehousing y procesos de nacionalización para que tu cadena de
+              suministro sea más estable, trazable y preparada para escalar.
             </p>
             <div className="pt-4">
-              <CustomButton1 text="CONOCE MÁS" link="/" />
+              <CustomButton1 text="SOLICITAR DIAGNÓSTICO" link="/contact" />
             </div>
           </div>
         </div>

@@ -8,25 +8,25 @@ const Section1 = () => {
         <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className=" space-y-6">
             <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
-              Lorem ipsum dolor sit amet, consec
+              Conexión directa con fabricantes y proveedores en China
             </h2>
-            <p className="text-xl font-medium uppercase text-brand-secondary">
-              Sustainable energy made simple
+            <p className="text-base font-medium uppercase text-brand-secondary">
+              Compra internacional con estrategia y control
             </p>
-            <p className=" leading-relaxed text-muted-foreground">
-              Nam interdum diam condimentum sed augue nunc quam. Mattis dictum
-              cras morbi tellus amet. Turpis amet placerat ut lacinia ultricies
-              iaculis in scelerisque. Phasellus tellus enim quam interdum diam
-              lectus. Vitae porttitor euismod at fermentum.
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Diseñamos rutas de abastecimiento eficientes para que tu empresa
+              encuentre mejores oportunidades de compra, valide proveedores y
+              tome decisiones comerciales con datos, experiencia local y soporte
+              continuo en origen.
             </p>
             <div className="pt-4">
-              <CustomButton1 text="CONOCE MÁS" link="/" />
+              <CustomButton1 text="CONOCER PROCESO" link="/contact" />
             </div>
           </div>
 
           <div className="justify-self-center lg:justify-self-end">
             <Image
-              src="/bg1.jpg"
+              src="/guangzhou-1.jpg"
               alt="City and modern building"
               width={500}
               height={600}
