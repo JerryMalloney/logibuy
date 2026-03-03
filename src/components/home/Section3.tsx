@@ -27,7 +27,7 @@ const Section3 = () => {
 
           <div className="justify-self-center lg:justify-self-end">
             <Image
-              src="/bg1.jpg"
+              src="/image2.jpg"
               alt="City and modern building"
               width={500}
               height={600}
