@@ -63,7 +63,7 @@ const Section4 = () => {
           </p>
           <Link
             href="/contact"
-            className="inline-block rounded-full bg-[#FDCF57] px-7 py-3 text-sm font-semibold uppercase text-black transition hover:scale-105 transition-all"
+            className="inline-block rounded-full bg-[#FDCF57] px-7 py-3 text-sm font-semibold uppercase text-black  hover:scale-105 transition-all"
           >
             Solicitar información de planes
           </Link>
