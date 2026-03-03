@@ -50,7 +50,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-2">
           <div className="md:flex md:items-center md:gap-12 max-md:flex-1">
             <Link className="block text-teal-600" href="/">
-              <Image src="/logo.svg" alt="Logo" width={150} height={150} />
+              <Image
+                src="/logo-logibuy.png"
+                alt="Logo"
+                width={150}
+                height={150}
+              />
             </Link>
           </div>
 

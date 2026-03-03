@@ -13,6 +13,7 @@ const logos = [
   "/logo7.png",
   "/logo8.png",
   "/logo9.png",
+  "/logo10.png",
 ];
 
 const Section1 = () => {
