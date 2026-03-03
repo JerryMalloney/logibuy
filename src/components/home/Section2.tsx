@@ -21,7 +21,7 @@ const stats = [
 
 const Section2 = () => {
   return (
-    <section className="bg-brand-primary px-4 py-16 md:py-20">
+    <section className="bg-linear-to-l to-[#122B86] from-[#020447]  px-4 py-16 md:py-20">
       <div className="container mx-auto text-white">
         <h2 className="font-medium text-3xl lg:text-5xl border-l-5 border-white pl-4 max-w-4xl leading-tight">
           Logística internacional para escalar tus importaciones con control y

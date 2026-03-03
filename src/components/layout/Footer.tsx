@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <footer
       id="contacto"
-      className="bg-brand-primary px-4 py-10 text-white md:py-14"
+      className="bg-linear-to-l to-[#122B86] from-[#020447]  px-4 py-10 text-white md:py-14"
     >
       <div className="container mx-auto space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14 lg:grid-cols-[1.35fr_1fr]">

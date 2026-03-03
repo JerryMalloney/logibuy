@@ -11,7 +11,7 @@ const highlights = [
 
 const Section5 = () => {
   return (
-    <section className="bg-brand-primary px-4 py-4">
+    <section className="bg-linear-to-l to-[#122B86] from-[#020447]  py-4">
       <div className="bg-muted">
         <div className="container mx-auto grid grid-cols-1 gap-12 px-4 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-8">

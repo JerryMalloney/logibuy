@@ -27,7 +27,7 @@ const businessPlans = [
 
 const Section4 = () => {
   return (
-    <section className="bg-[#0F242A] px-4 py-14 md:py-20">
+    <section className="bg-linear-to-l to-[#122B86] from-[#020447]  px-4 py-14 md:py-20">
       <div className="container mx-auto text-white">
         <h2 className="border-l-5 border-white pl-4 text-4xl font-medium leading-tight lg:text-5xl">
           Planes de Negocio Internacional
@@ -53,7 +53,7 @@ const Section4 = () => {
         </div>
 
         <div className="mt-12 space-y-10">
-          <p className="text-base font-semibold uppercase text-brand-secondary">
+          <p className="text-base font-semibold uppercase text-white">
             Asesoría personalizada para cada tipo de empresa
           </p>
           <p className="max-w-6xl text-base leading-relaxed text-white/90">
@@ -63,7 +63,7 @@ const Section4 = () => {
           </p>
           <Link
             href="/contact"
-            className="inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold uppercase text-brand-primary transition hover:bg-white/90"
+            className="inline-block rounded-full bg-[#FDCF57] px-7 py-3 text-sm font-semibold uppercase text-black transition hover:scale-105 transition-all"
           >
             Solicitar información de planes
           </Link>
