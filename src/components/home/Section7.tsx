@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     rating: "4.9",
-    text: "Necesitábamos una solución puerta a puerta para La Guaira y el resultado fue una cadena logística mucho más predecible.",
+    text: "Necesitábamos un servicio logístico integral para La Guaira y el resultado fue una cadena de suministro mucho más predecible.",
     author: "Líder de Operaciones, Importadora Caribe",
   },
 ];

@@ -17,7 +17,7 @@ const Section2 = () => {
           </div>
           <div className=" space-y-6">
             <h2 className="text-3xl md:text-5xl leading-tight font-medium text-foreground">
-              Operación logística puerta a puerta con enfoque empresarial
+              Operación con servicio logístico integral y enfoque empresarial
             </h2>
             <p className="text-base font-medium uppercase text-brand-secondary">
               Soluciones marítimas, aéreas y aduanales

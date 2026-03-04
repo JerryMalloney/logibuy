@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl text-white space-y-5">
             <h1 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4">
-              Importación desde China y logística internacional puerta a puerta
+              Importación desde China y servicio logístico integral
             </h1>
             <p className="pl-5 text-base">
               Conectamos tu negocio con fabricantes y centros de abastecimiento

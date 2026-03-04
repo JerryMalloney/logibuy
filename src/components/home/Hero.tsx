@@ -7,14 +7,15 @@ const Hero = () => {
       <Image
         alt="Importación y logística internacional desde China"
         fill
-        src={"/hero3.jpg"}
+        src={"/hongkong1.jpg"}
         className="object-cover"
       />
       <div className="relative py-[40%] md:py-[30%] lg:py-[25%] xl:py-[13%] bg-black/60 px-4">
         <div className="container mx-auto">
           <div className="max-w-2xl text-white space-y-5">
             <h1 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4">
-              Importación desde China y logística internacional puerta a puerta
+              Importación desde China, logistica y nacionalización con
+              acompañamiento comercial
             </h1>
             <p className="pl-5 text-base">
               Conectamos tu negocio con fabricantes y centros de abastecimiento

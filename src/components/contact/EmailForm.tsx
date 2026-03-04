@@ -112,8 +112,9 @@ const EmailForm = ({ className = "" }: EmailFormProps) => {
               </option>
               <option value="lcl-fcl">Envío marítimo LCL / FCL</option>
               <option value="aereo">Envío aéreo</option>
-              <option value="puerta-puerta">Puerta a puerta</option>
-              <option value="supply-chain">Supply Chain</option>
+              <option value="logistica-integral">
+                Servicio logístico integral
+              </option>
               <option value="aduanas">Servicios aduanales</option>
               <option value="otro">Otro</option>
             </select>
