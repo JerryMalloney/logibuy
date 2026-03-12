@@ -18,7 +18,7 @@ import {
 const navLinks = [
   { label: "Inicio", href: "/" },
   { label: "Sobre Nosotros", href: "/about" },
-  { label: "Calculadora", href: "/" },
+  { label: "Calculadora", href: "/calculadora" },
   { label: "Contáctanos", href: "/contact" },
 ];
 

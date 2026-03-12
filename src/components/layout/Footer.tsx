@@ -13,7 +13,7 @@ import {
 const navigationLinks = [
   { label: "Inicio", href: "/" },
   { label: "Sobre nosotros", href: "/about" },
-  { label: "Calculadora de Envios", href: "/about" },
+  { label: "Calculadora de Envios", href: "/calculadora" },
   { label: "Contactanos", href: "/contact" },
 ];
 
