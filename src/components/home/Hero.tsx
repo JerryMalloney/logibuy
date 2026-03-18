@@ -7,7 +7,7 @@ const Hero = () => {
       <Image
         alt="Importación y logística internacional desde China"
         fill
-        src={"/hongkong1.jpg"}
+        src={"/hongkong1.png"}
         className="object-cover"
       />
       <div className="relative py-[40%] md:py-[30%] lg:py-[25%] xl:py-[13%] bg-black/60 px-4">
