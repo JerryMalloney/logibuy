@@ -142,7 +142,9 @@ const calculateSeaLclQuote = (values: typeof defaultSeaValues) => {
 export default function CalculadoraPage() {
   const [airValues, setAirValues] = useState(defaultAirValues);
   const [seaValues, setSeaValues] = useState(defaultSeaValues);
-  const [airResult, setAirResult] = useState(() => calculateAirQuote(defaultAirValues));
+  const [airResult, setAirResult] = useState(() =>
+    calculateAirQuote(defaultAirValues),
+  );
   const [seaLclResult, setSeaLclResult] = useState(() =>
     calculateSeaLclQuote(defaultSeaValues),
   );
@@ -247,7 +249,7 @@ export default function CalculadoraPage() {
             </p>
           </div>
 
-          <div className="mt-8 rounded-[1.25rem] border border-slate-200 bg-white px-5 py-4 shadow-sm sm:px-6">
+          <div className="mt-8 rounded-4xl border border-slate-200 bg-white px-5 py-4 shadow-sm sm:px-6">
             <div className="grid gap-4 text-sm text-slate-600 md:grid-cols-3">
               <div>
                 <p className="font-semibold text-slate-900">Aéreo</p>
@@ -272,7 +274,7 @@ export default function CalculadoraPage() {
 
           <Tabs defaultValue="aereo" className="mt-10 gap-6">
             <TabsList
-              className="h-auto rounded-[1rem] border border-slate-200 bg-white p-1 shadow-sm"
+              className="h-auto rounded-3xl border border-slate-200 bg-white p-1 shadow-sm"
               variant="default"
             >
               <TabsTrigger
@@ -291,6 +293,15 @@ export default function CalculadoraPage() {
 
             <TabsContent value="aereo" className="mt-0">
               <article className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.07)]">
+                <div className="border-b border-slate-200 px-5 py-5 sm:px-6">
+                  <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                    <div className="max-w-xl">
+                      <h3 className="mt-4 text-2xl font-medium text-slate-950 sm:text-3xl">
+                        Aereo
+                      </h3>
+                    </div>
+                  </div>
+                </div>
                 <div className="px-5 py-5 sm:px-6 sm:py-6">
                   <div className="mt-8 grid gap-6">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -395,7 +406,7 @@ export default function CalculadoraPage() {
 
                     <div className="rounded-[1.4rem] bg-slate-100 p-4 sm:p-5">
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                        <div className="rounded-[1rem] bg-white p-4">
+                        <div className="rounded-3xl bg-white p-4">
                           <p className="text-sm text-slate-600">Peso Real</p>
                           <p className="mt-2 text-[1.9rem] font-semibold leading-none text-slate-950">
                             {formatNumber(airResult.pesoReal)}
@@ -404,7 +415,7 @@ export default function CalculadoraPage() {
                             </span>
                           </p>
                         </div>
-                        <div className="rounded-[1rem] bg-white p-4">
+                        <div className="rounded-3xl bg-white p-4">
                           <p className="text-sm text-slate-600">
                             Peso Volumetrico
                           </p>
@@ -415,7 +426,7 @@ export default function CalculadoraPage() {
                             </span>
                           </p>
                         </div>
-                        <div className="rounded-[1rem] bg-white p-4">
+                        <div className="rounded-3xl bg-white p-4">
                           <p className="text-sm text-slate-600">
                             Base Cobrable
                           </p>
@@ -428,7 +439,7 @@ export default function CalculadoraPage() {
                         </div>
                       </div>
 
-                      <div className="mt-4 rounded-[1rem] bg-white p-5">
+                      <div className="mt-4 rounded-3xl bg-white p-5">
                         {airResult.rate ? (
                           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                             <div>
@@ -444,7 +455,7 @@ export default function CalculadoraPage() {
                               </p>
                             </div>
 
-                            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[260px]">
+                            <div className="grid gap-2 sm:grid-cols-2 lg:min-w-65">
                               <div className="rounded-xl bg-slate-50 px-4 py-3">
                                 <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
                                   Tránsito
@@ -454,14 +465,14 @@ export default function CalculadoraPage() {
                                 </p>
                               </div>
                               <div className="rounded-xl bg-slate-50 px-4 py-3">
-                              <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                                Tarifa
-                              </p>
-                              <p className="mt-1 text-sm font-semibold text-slate-900">
-                                {airResult.rate.label}
-                              </p>
+                                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
+                                  Tarifa
+                                </p>
+                                <p className="mt-1 text-sm font-semibold text-slate-900">
+                                  {airResult.rate.label}
+                                </p>
+                              </div>
                             </div>
-                          </div>
                           </div>
                         ) : (
                           <>
@@ -495,7 +506,7 @@ export default function CalculadoraPage() {
                           {airRates.map((tier) => (
                             <div
                               key={tier.label}
-                              className="rounded-[1rem] bg-white px-4 py-3"
+                              className="rounded-3xl bg-white px-4 py-3"
                             >
                               <p className="text-sm text-slate-600">
                                 {tier.label}
@@ -612,22 +623,22 @@ export default function CalculadoraPage() {
                                 </span>
                               </div>
                             </div>
-                        </label>
-                      </div>
+                          </label>
+                        </div>
 
-                      <div className="flex justify-start">
-                        <button
-                          type="button"
-                          onClick={handleSeaLclCalculate}
-                          className="rounded-full bg-[#4461ad] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#375299]"
-                        >
-                          Calcular
-                        </button>
-                      </div>
+                        <div className="flex justify-start">
+                          <button
+                            type="button"
+                            onClick={handleSeaLclCalculate}
+                            className="rounded-full bg-[#4461ad] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#375299]"
+                          >
+                            Calcular
+                          </button>
+                        </div>
 
-                      <div className="rounded-[1.4rem] bg-slate-100 p-4 sm:p-5">
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                          <div className="rounded-[1rem] bg-white p-4">
+                        <div className="rounded-[1.4rem] bg-slate-100 p-4 sm:p-5">
+                          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">
                                 Peso Real
                               </p>
@@ -638,7 +649,7 @@ export default function CalculadoraPage() {
                                 </span>
                               </p>
                             </div>
-                            <div className="rounded-[1rem] bg-white p-4">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">CBM</p>
                               <p className="mt-2 text-[1.9rem] font-semibold leading-none text-slate-950">
                                 {formatNumber(seaLclResult.cbm)}
@@ -647,7 +658,7 @@ export default function CalculadoraPage() {
                                 </span>
                               </p>
                             </div>
-                            <div className="rounded-[1rem] bg-white p-4">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">
                                 Base Facturable
                               </p>
@@ -660,7 +671,7 @@ export default function CalculadoraPage() {
                             </div>
                           </div>
 
-                          <div className="mt-4 rounded-[1rem] bg-white p-5">
+                          <div className="mt-4 rounded-3xl bg-white p-5">
                             {seaLclResult.quote ? (
                               <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                                 <div>
@@ -677,7 +688,7 @@ export default function CalculadoraPage() {
                                   </p>
                                 </div>
 
-                                <div className="grid gap-2 sm:grid-cols-2 lg:min-w-[260px]">
+                                <div className="grid gap-2 sm:grid-cols-2 lg:min-w-65">
                                   <div className="rounded-xl bg-slate-50 px-4 py-3">
                                     <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
                                       Tránsito
@@ -688,13 +699,13 @@ export default function CalculadoraPage() {
                                   </div>
                                   <div className="rounded-xl bg-slate-50 px-4 py-3">
                                     <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                                    Tarifa
-                                  </p>
-                                  <p className="mt-1 text-sm font-semibold text-slate-900">
-                                    {seaLclResult.quote.label}
-                                  </p>
+                                      Tarifa
+                                    </p>
+                                    <p className="mt-1 text-sm font-semibold text-slate-900">
+                                      {seaLclResult.quote.label}
+                                    </p>
+                                  </div>
                                 </div>
-                              </div>
                               </div>
                             ) : (
                               <>
@@ -746,7 +757,7 @@ export default function CalculadoraPage() {
                               ].map((item) => (
                                 <div
                                   key={item.label}
-                                  className="rounded-[1rem] bg-white px-4 py-3"
+                                  className="rounded-3xl bg-white px-4 py-3"
                                 >
                                   <p className="text-sm text-slate-600">
                                     {item.label}
@@ -803,7 +814,7 @@ export default function CalculadoraPage() {
 
                         <div className="rounded-[1.4rem] bg-slate-100 p-4 sm:p-5">
                           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                            <div className="rounded-[1rem] bg-white p-4">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">
                                 Modalidad
                               </p>
@@ -811,7 +822,7 @@ export default function CalculadoraPage() {
                                 FCL
                               </p>
                             </div>
-                            <div className="rounded-[1rem] bg-white p-4">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">
                                 Contenedor
                               </p>
@@ -819,7 +830,7 @@ export default function CalculadoraPage() {
                                 {seaFclQuote.label}
                               </p>
                             </div>
-                            <div className="rounded-[1rem] bg-white p-4">
+                            <div className="rounded-3xl bg-white p-4">
                               <p className="text-sm text-slate-600">
                                 Tarifa Fija
                               </p>
@@ -829,7 +840,7 @@ export default function CalculadoraPage() {
                             </div>
                           </div>
 
-                          <div className="mt-4 rounded-[1rem] bg-white p-5">
+                          <div className="mt-4 rounded-3xl bg-white p-5">
                             <p className="text-sm text-slate-600">
                               Calculo Final
                             </p>
@@ -849,7 +860,7 @@ export default function CalculadoraPage() {
                               {seaContainers.map((option) => (
                                 <div
                                   key={option.value}
-                                  className="rounded-[1rem] bg-white px-4 py-3"
+                                  className="rounded-3xl bg-white px-4 py-3"
                                 >
                                   <p className="text-sm text-slate-600">
                                     {option.label}
