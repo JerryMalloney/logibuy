@@ -22,14 +22,12 @@ const seaInputFields = [
   { key: "largo", label: "Largo", suffix: "cm" },
   { key: "ancho", label: "Ancho", suffix: "cm" },
   { key: "alto", label: "Alto", suffix: "cm" },
-  { key: "cantidad", label: "Cantidad", suffix: "bultos" },
 ] as const;
 
 const defaultAirValues = {
   largo: "0",
   ancho: "0",
   alto: "0",
-  cantidad: "0",
   pesoReal: "0",
 };
 
@@ -37,7 +35,6 @@ const defaultSeaValues = {
   largo: "0",
   ancho: "0",
   alto: "0",
-  cantidad: "0",
   pesoReal: "0",
   modalidad: "lcl",
   contenedor: "20ft",
@@ -111,9 +108,8 @@ const calculateAirQuote = (values: typeof defaultAirValues) => {
   const largo = Number.parseFloat(values.largo) || 0;
   const ancho = Number.parseFloat(values.ancho) || 0;
   const alto = Number.parseFloat(values.alto) || 0;
-  const cantidad = Number.parseFloat(values.cantidad) || 0;
   const pesoReal = Number.parseFloat(values.pesoReal) || 0;
-  const pesoVolumetrico = (largo * ancho * alto * cantidad) / 6000;
+  const pesoVolumetrico = (largo * ancho * alto) / 6000;
   const pesoCobrable = Math.max(pesoReal, pesoVolumetrico);
   const rate = getAirRate(pesoCobrable);
 
@@ -130,9 +126,8 @@ const calculateSeaLclQuote = (values: typeof defaultSeaValues) => {
   const largo = Number.parseFloat(values.largo) || 0;
   const ancho = Number.parseFloat(values.ancho) || 0;
   const alto = Number.parseFloat(values.alto) || 0;
-  const cantidad = Number.parseFloat(values.cantidad) || 0;
   const pesoReal = Number.parseFloat(values.pesoReal) || 0;
-  const cbm = (largo * ancho * alto * cantidad) / 1000000;
+  const cbm = (largo * ancho * alto) / 1000000;
   const baseFacturable = Math.max(cbm, pesoReal / 1000);
   const quote = getSeaLclRate(baseFacturable);
 
@@ -298,7 +293,7 @@ export default function CalculadoraPage() {
               <article className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.07)]">
                 <div className="px-5 py-5 sm:px-6 sm:py-6">
                   <div className="mt-8 grid gap-6">
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                       <label className="space-y-2">
                         <span className="block text-sm font-medium text-slate-700">
                           Alto
@@ -360,30 +355,6 @@ export default function CalculadoraPage() {
                             />
                             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                               cm
-                            </span>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                      <label className="space-y-2">
-                        <span className="block text-sm font-medium text-slate-700">
-                          Cantidad
-                        </span>
-                        <div className="rounded-xl bg-slate-100 px-4 py-3">
-                          <div className="flex items-center gap-3">
-                            <input
-                              type="number"
-                              min="0"
-                              value={airValues.cantidad}
-                              onChange={(event) =>
-                                handleAirChange("cantidad", event.target.value)
-                              }
-                              className="w-full bg-transparent text-lg font-semibold text-slate-900 outline-none"
-                            />
-                            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                              unds
                             </span>
                           </div>
                         </div>
@@ -590,7 +561,7 @@ export default function CalculadoraPage() {
                   <div className="mt-8 grid gap-6">
                     {seaValues.modalidad === "lcl" ? (
                       <>
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                           {seaInputFields.slice(0, 3).map((field) => (
                             <label key={field.key} className="space-y-2">
                               <span className="block text-sm font-medium text-slate-700">
@@ -617,33 +588,6 @@ export default function CalculadoraPage() {
                               </div>
                             </label>
                           ))}
-                        </div>
-
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                          <label className="space-y-2">
-                            <span className="block text-sm font-medium text-slate-700">
-                              Cantidad
-                            </span>
-                            <div className="rounded-xl bg-slate-100 px-4 py-3">
-                              <div className="flex items-center gap-3">
-                                <input
-                                  type="number"
-                                  min="0"
-                                  value={seaValues.cantidad}
-                                  onChange={(event) =>
-                                    handleSeaChange(
-                                      "cantidad",
-                                      event.target.value,
-                                    )
-                                  }
-                                  className="w-full bg-transparent text-lg font-semibold text-slate-900 outline-none"
-                                />
-                                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                                  bultos
-                                </span>
-                              </div>
-                            </div>
-                          </label>
 
                           <label className="space-y-2">
                             <span className="block text-sm font-medium text-slate-700">
@@ -761,8 +705,8 @@ export default function CalculadoraPage() {
                                   Datos insuficientes
                                 </p>
                                 <p className="mt-3 text-sm text-slate-500">
-                                  El cálculo LCL necesita dimensiones, cantidad
-                                  y peso real total.
+                                  El cálculo LCL necesita dimensiones y/o peso
+                                  real total.
                                 </p>
                                 <div className="mt-4 rounded-xl bg-slate-50 px-4 py-3">
                                   <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
