@@ -18,9 +18,22 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "LOGIBUY | Importación desde China y logística internacional",
+  title: {
+    default: "LOGIBUY | Importación desde China y logística internacional",
+    template: "%s",
+  },
+  applicationName: "LOGIBUY",
   description:
     "LOGIBUY ofrece soluciones de importación desde China, logística internacional, supply chain, servicios aduanales y acompañamiento comercial para empresas en Latinoamérica y Europa.",
+  openGraph: {
+    siteName: "LOGIBUY",
+    locale: "es_ES",
+    type: "website",
+    url: siteUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

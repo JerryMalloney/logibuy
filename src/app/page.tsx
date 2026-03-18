@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import Section1 from "@/components/home/Section1";
 import Section2 from "@/components/home/Section2";
@@ -8,11 +7,13 @@ import Section5 from "@/components/home/Section5";
 import Section6 from "@/components/home/Section6";
 import Section7 from "@/components/home/Section7";
 import Section8 from "@/components/home/Section8";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "LOGIBUY | Importación desde China y logística internacional",
+export const metadata = buildPageMetadata({
+  title: "Importación desde China y Logística Internacional | LOGIBUY",
   description:
-    "Soluciones de importación desde China: envío marítimo LCL/FCL, envío aéreo, supply chain, inspecciones técnicas, warehousing y gestión aduanal para empresas en Latinoamérica y Europa.",
+    "LOGIBUY ofrece soluciones de importación desde China con envío marítimo LCL y FCL, envío aéreo, supply chain, inspecciones técnicas, warehousing y gestión aduanal para empresas en Latinoamérica y Europa.",
+  path: "/",
   keywords: [
     "importación desde China",
     "logística internacional",
@@ -25,7 +26,8 @@ export const metadata: Metadata = {
     "servicios aduanales",
     "Canton Fair",
   ],
-};
+  image: "/hero.jpg",
+});
 
 export default function Home() {
   return (
