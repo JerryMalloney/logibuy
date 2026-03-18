@@ -260,7 +260,7 @@ export default function CalculadoraPage() {
               <div>
                 <p className="font-semibold text-slate-900">Marítimo LCL</p>
                 <p className="mt-1">
-                  Base facturable = mayor entre CBM y peso real / 1000.
+                  Base facturable = mayor entre CBM y peso real / 1000 (500 kg).
                 </p>
               </div>
               <div>

@@ -1,5 +1,7 @@
 "use client";
 
+import { MapPin, Phone } from "lucide-react";
+import { contactInfo } from "@/lib/contact-info";
 import EmailForm from "./EmailForm";
 
 const Section1 = () => {
@@ -19,12 +21,35 @@ const Section1 = () => {
               planificar tu cadena de suministro y tomar decisiones operativas
               con mayor control, visibilidad y acompañamiento experto.
             </p>
+
+            <div className="space-y-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
+              <p className="flex items-center gap-3 text-sm text-foreground sm:text-base">
+                <Phone className="size-5 shrink-0 text-brand-secondary" />
+                <a
+                  href={contactInfo.phoneHref}
+                  className="transition hover:text-brand-secondary"
+                >
+                  {contactInfo.phoneDisplay}
+                </a>
+              </p>
+              <div className="flex items-start gap-3 text-sm text-foreground sm:text-base">
+                <MapPin className="mt-0.5 size-5 shrink-0 text-brand-secondary" />
+                <div>
+                  <p>{contactInfo.addressCn}</p>
+                  <p className="text-muted-foreground">
+                    {contactInfo.addressEn}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="overflow-hidden">
             <iframe
               title="Mapa de ubicación"
-              src="https://maps.google.com/maps?q=8095%20NW%208TH%20ST%20MIAMI%20FLORIDA%2033126&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                contactInfo.mapQuery,
+              )}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
               className="h-72 w-full border-0 md:h-90"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

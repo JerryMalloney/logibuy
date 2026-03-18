@@ -4,11 +4,11 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Mail,
   MapPin,
   Phone,
   Twitter,
 } from "lucide-react";
+import { contactInfo } from "@/lib/contact-info";
 
 const navigationLinks = [
   { label: "Inicio", href: "/" },
@@ -38,15 +38,21 @@ const Footer = () => {
             <div className="space-y-4 text-white/90">
               <p className="flex items-center gap-3 text-sm sm:text-base">
                 <Phone className="size-5 shrink-0" />
-                +1 (800) 123-4567
-              </p>
-              <p className="flex items-center gap-3 text-sm sm:text-base">
-                <Mail className="size-5 shrink-0" />
-                support@24VoltOn.com
+                <a
+                  href={contactInfo.phoneHref}
+                  className="transition hover:text-white/75"
+                >
+                  {contactInfo.phoneDisplay}
+                </a>
               </p>
               <p className="flex items-start gap-3 text-sm sm:text-base">
                 <MapPin className="mt-0.5 size-5 shrink-0" />
-                C/ Pintor Gisbert 4, bajo dcha 46006 Valencia, Spain
+                <span>
+                  <span className="block">{contactInfo.addressCn}</span>
+                  <span className="block text-white/75">
+                    {contactInfo.addressEn}
+                  </span>
+                </span>
               </p>
             </div>
 
@@ -87,8 +93,8 @@ const Footer = () => {
 
         <div className="border-t border-white/10 pt-6 text-sm text-white/80 sm:text-base">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <p>Logibuy LTD - Lorem ipsum dolor sit amet, consec</p>
-            <p>Copyright © 2024. All rights reserved.</p>
+            <p>Logibuy LTD | Operaciones logísticas desde Yiwu, China.</p>
+            <p>Copyright © 2026. All rights reserved.</p>
           </div>
         </div>
       </div>
