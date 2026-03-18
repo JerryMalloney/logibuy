@@ -1,14 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { contactInfo } from "@/lib/contact-info";
+import { BsInstagram } from "react-icons/bs";
 
 const navigationLinks = [
   { label: "Inicio", href: "/" },
@@ -17,11 +11,28 @@ const navigationLinks = [
   { label: "Contactanos", href: "/contact" },
 ];
 
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+  >
+    <path d="M19.59 6.69A4.83 4.83 0 0 1 16 5.13V16a6 6 0 1 1-6-6c.34 0 .67.03 1 .08v3.06a3 3 0 1 0 2 2.83V0h3a4.85 4.85 0 0 0 4.85 4.85v1.84c-.43 0-.85-.04-1.26-.12Z" />
+  </svg>
+);
+
 const socialLinks = [
-  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
-  { label: "Twitter", href: "https://x.com", icon: Twitter },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/logibuyltd/",
+    icon: BsInstagram,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@miguelmendo19",
+    icon: TikTokIcon,
+  },
 ];
 
 const Footer = () => {
@@ -64,6 +75,8 @@ const Footer = () => {
                     key={item.label}
                     href={item.href}
                     aria-label={item.label}
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex size-10 items-center justify-center rounded-full bg-black/35 text-white transition hover:bg-black/50"
                   >
                     <Icon className="size-4" />

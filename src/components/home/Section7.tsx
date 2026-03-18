@@ -26,6 +26,11 @@ const testimonials = [
     text: "Necesitábamos un servicio logístico integral para La Guaira y el resultado fue una cadena de suministro mucho más predecible.",
     author: "Líder de Operaciones, Importadora Caribe",
   },
+  {
+    rating: "4.9",
+    text: "Necesitábamos un servicio logístico integral para La Guaira y el resultado fue una cadena de suministro mucho más predecible.",
+    author: "Líder de Operaciones, Importadora Caribe",
+  },
 ];
 
 const Section7 = () => {
