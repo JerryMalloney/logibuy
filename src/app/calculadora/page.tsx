@@ -4,6 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Calculadora de Envíos | LOGIBUY",
+  description:
+    "Calcula costos estimados de envío aéreo y marítimo con la calculadora logística de LOGIBUY para importaciones desde China.",
+};
 
 const airRates = [
   { minKg: 1000, label: "1000 kg", price: 16.75 },

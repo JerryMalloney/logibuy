@@ -46,7 +46,7 @@ const Section5 = () => {
             </ul>
 
             <div className="pt-2">
-              <CustomButton1 text="SOLICITAR COTIZACIÓN" link="/about" />
+              <CustomButton1 text="SOLICITAR COTIZACIÓN" link="/contact" />
             </div>
           </div>
         </div>
