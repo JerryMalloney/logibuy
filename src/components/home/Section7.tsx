@@ -26,6 +26,11 @@ const testimonials = [
     text: "Necesitábamos un servicio logístico integral para La Guaira y el resultado fue una cadena de suministro mucho más predecible.",
     author: "Líder de Operaciones, Importadora Caribe",
   },
+  {
+    rating: "5.0",
+    text: "Con LOGIBUY logramos consolidar varias órdenes de compra en una sola operación, reduciendo retrasos y mejorando la visibilidad de todo el proceso.",
+    author: "Coordinadora de Abastecimiento, Distribuidora Nacional",
+  },
 ];
 
 const Section7 = () => {

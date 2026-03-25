@@ -55,6 +55,7 @@ const Navbar = () => {
                 alt="Logo"
                 width={150}
                 height={150}
+                className="aspect-auto"
               />
             </Link>
           </div>
@@ -104,6 +105,7 @@ const Navbar = () => {
                         alt="Logibuy"
                         width={120}
                         height={36}
+                        className="aspect-auto"
                       />
                       <SheetTitle className="mt-2 text-white">Menú</SheetTitle>
                       <SheetDescription className="text-white/70">

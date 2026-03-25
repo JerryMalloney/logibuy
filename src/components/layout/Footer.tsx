@@ -44,7 +44,13 @@ const Footer = () => {
       <div className="container mx-auto space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14 lg:grid-cols-[1.35fr_1fr]">
           <div className="space-y-6">
-            <Image src="/logo.svg" alt="Logibuy logo" width={190} height={90} />
+            <Image
+              src="/logo.svg"
+              alt="Logibuy logo"
+              width={190}
+              height={90}
+              className="aspect-auto"
+            />
 
             <div className="space-y-4 text-white/90">
               <p className="flex items-center gap-3 text-sm sm:text-base">
