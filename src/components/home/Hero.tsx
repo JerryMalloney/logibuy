@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative py-[40%] md:py-[30%] lg:py-[25%] xl:py-[13%] bg-black/60 px-4">
         <div className="container mx-auto">
           <div className="max-w-2xl text-white space-y-5">
-            <h1 className="font-medium text-4xl lg:text-6xl border-l-5 border-white pl-4">
+            <h1 className="font-medium text-3xl lg:text-6xl border-l-5 border-white pl-4">
               Importación desde China, logistica y nacionalización con
               acompañamiento comercial
             </h1>
