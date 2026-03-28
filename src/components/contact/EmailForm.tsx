@@ -94,15 +94,15 @@ const EmailForm = ({ className = "" }: EmailFormProps) => {
 
         <div className="w-full md:col-span-3">
           <label
-            htmlFor="usageType"
+            htmlFor="Service"
             className="mb-2 block text-base text-foreground"
           >
             Tipo de servicio
           </label>
           <div className="relative">
             <select
-              id="usageType"
-              name="usageType"
+              id="Service"
+              name="Service"
               className="block w-full appearance-none border-0 border-transparent bg-white px-4 py-3 pr-12 text-base text-muted-foreground shadow-none outline-none ring-0 focus:border-transparent focus:outline-none focus:ring-0"
               defaultValue=""
               required
