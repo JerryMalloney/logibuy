@@ -60,38 +60,46 @@ const getSeaLclRate = (wm: number) => {
     return null;
   }
 
-  if (wm <= 0.1) {
+  const chargedBase = Math.max(wm, 0.1);
+
+  // Select the last applicable pricing tier, then convert that tier
+  // to its effective per-CBM rate for the final quote.
+  if (chargedBase < 0.5) {
     return {
       label: "0.1 CBM",
-      type: "flat" as const,
-      total: 50,
-      unitRate: null,
+      type: "variable" as const,
+      total: chargedBase * (50 / 0.1),
+      chargedBase,
+      unitRate: 50 / 0.1,
     };
   }
 
-  if (wm <= 0.5) {
+  if (chargedBase < 1) {
     return {
       label: "0.5 CBM",
-      type: "flat" as const,
-      total: 160,
-      unitRate: null,
+      type: "variable" as const,
+      total: chargedBase * (160 / 0.5),
+      chargedBase,
+      unitRate: 160 / 0.5,
     };
   }
 
-  if (wm <= 1) {
+  if (chargedBase < 5) {
     return {
       label: "1.0 CBM",
-      type: "flat" as const,
-      total: 300,
-      unitRate: null,
+      type: "variable" as const,
+      total: chargedBase * 300,
+      chargedBase,
+      unitRate: 300,
     };
   }
 
-  if (wm < 10) {
+  if (chargedBase < 10) {
     return {
       label: "5.0 CBM",
       type: "variable" as const,
-      total: wm * 280,
+      total: chargedBase * 280,
+      chargedBase,
       unitRate: 280,
     };
   }
@@ -99,7 +107,8 @@ const getSeaLclRate = (wm: number) => {
   return {
     label: "10+ CBM",
     type: "variable" as const,
-    total: wm * 250,
+    total: chargedBase * 250,
+    chargedBase,
     unitRate: 250,
   };
 };
@@ -683,7 +692,7 @@ export default function CalculadoraPage() {
                                   </p>
                                   <p className="mt-3 text-sm text-[#4461ad]">
                                     {seaLclResult.quote.unitRate
-                                      ? `${formatNumber(seaLclResult.baseFacturable)} base * ${formatCurrency(seaLclResult.quote.unitRate)}`
+                                      ? `${formatNumber(seaLclResult.quote.chargedBase)} base * ${formatCurrency(seaLclResult.quote.unitRate)}`
                                       : "Monto fijo según tramo de la tabla"}
                                   </p>
                                 </div>
@@ -748,11 +757,11 @@ export default function CalculadoraPage() {
                                 },
                                 {
                                   label: "5.0 CBM",
-                                  value: `${formatCurrency(280)} / base`,
+                                  value: `${formatCurrency(280)} / CBM`,
                                 },
                                 {
                                   label: "10+ CBM",
-                                  value: `${formatCurrency(250)} / base`,
+                                  value: `${formatCurrency(250)} / CBM`,
                                 },
                               ].map((item) => (
                                 <div
