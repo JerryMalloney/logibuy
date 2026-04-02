@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import { contactInfo } from "@/lib/contact-info";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const navigationLinks = [
   { label: "Inicio", href: "/" },
@@ -53,7 +53,7 @@ const Footer = () => {
             />
 
             <div className="space-y-4 text-white/90">
-              <p className="flex items-center gap-3 text-sm sm:text-base">
+              <div className="flex items-center gap-3 text-sm sm:text-base">
                 <Phone className="size-5 shrink-0" />
                 <a
                   href={contactInfo.phoneHref}
@@ -61,7 +61,18 @@ const Footer = () => {
                 >
                   {contactInfo.phoneDisplay}
                 </a>
-              </p>
+              </div>
+              <div className="flex items-center gap-3 text-sm sm:text-base">
+                <BsWhatsapp className="size-5 shrink-0" />
+                <a
+                  href={contactInfo.whatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition hover:text-white/75"
+                >
+                  WhatsApp
+                </a>
+              </div>
               <p className="flex items-start gap-3 text-sm sm:text-base">
                 <MapPin className="mt-0.5 size-5 shrink-0" />
                 <span>

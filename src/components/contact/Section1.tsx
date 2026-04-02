@@ -1,6 +1,7 @@
 "use client";
 
 import { MapPin, Phone } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
 import { contactInfo } from "@/lib/contact-info";
 import EmailForm from "./EmailForm";
 
@@ -23,7 +24,7 @@ const Section1 = () => {
             </p>
 
             <div className="space-y-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
-              <p className="flex items-center gap-3 text-sm text-foreground sm:text-base">
+              <div className="flex items-center gap-3 text-sm text-foreground sm:text-base">
                 <Phone className="size-5 shrink-0 text-brand-secondary" />
                 <a
                   href={contactInfo.phoneHref}
@@ -31,7 +32,18 @@ const Section1 = () => {
                 >
                   {contactInfo.phoneDisplay}
                 </a>
-              </p>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-foreground sm:text-base">
+                <BsWhatsapp className="size-5 shrink-0 text-brand-secondary" />
+                <a
+                  href={contactInfo.whatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition hover:text-brand-secondary"
+                >
+                  WhatsApp
+                </a>
+              </div>
               <div className="flex items-start gap-3 text-sm text-foreground sm:text-base">
                 <MapPin className="mt-0.5 size-5 shrink-0 text-brand-secondary" />
                 <div>
